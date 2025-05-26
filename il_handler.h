@@ -9,6 +9,8 @@ class IlHandler
   ~IlHandler();
   static IlHandler* GetInstance();
 
+
+
   private:
   IlHandler();
   // Non-copyable and non-movable
@@ -16,7 +18,13 @@ class IlHandler
   IlHandler& operator=(const IlHandler&) = delete;
   IlHandler(IlHandler&&) = delete;
   IlHandler& operator=(IlHandler&&) = delete;
+
+  // Member Variables
+  string source_file_;
   
+
+  // Data Structures
+  static VersionVsStdMapT std_versions;
 };
 
 #endif // IL_FILE_STRUCTURE_IL_HANDLER_H

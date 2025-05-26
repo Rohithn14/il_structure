@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.10)         # Minimum CMake version
 
-project(il_project VERSION 1.0)               # Project name and version
+project(il_fs VERSION 1.0 LANGUAGES CXX)               # Project name and version
 
-set(CMAKE_CXX_STANDARD 17)                    # Use C++17 standard
+set(CMAKE_CXX_STANDARD 23)                    # Use C++23 standard
 set(CMAKE_CXX_STANDARD_REQUIRED YES)
-set(CMALE_CXX_EXTENSIONS NO)                  # Disable compiler-specific extensions
+set(CMAKE_CXX_EXTENSIONS NO)                  # Disable compiler-specific extensions
+
+# include(CTEST)
+# enable_testing()
 
 # Specify your source files here
 set(SOURCES
