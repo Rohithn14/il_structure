@@ -12,7 +12,6 @@ using std::string;
 using std::vector;
 using std::unordered_map;
 
-
 using VersionVsStdMapT = unordered_map<string, string>;
 
 #endif // IL_FILE_STRUCTURE_INCLUDES_H
