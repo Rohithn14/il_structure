@@ -26,8 +26,12 @@ int main(int argc, char *argv[])
   {
     string line;
     getline(file_reader, line);
+    if(line.empty()) {
+      break;
+    }
     std::cout << line;
-    break;
+    
+    
   }
 
 
